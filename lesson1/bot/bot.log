@@ -1,0 +1,55 @@
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:apscheduler.scheduler:Scheduler started
+ERROR:telegram.ext.dispatcher:No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\LearnPython\lesson1\bot\learn_python_alex_bot.py", line 8, in greet_user
+    print(1/0)
+ZeroDivisionError: division by zero
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+INFO:root:Бот стартовал
+INFO:apscheduler.scheduler:Scheduler started
+INFO:telegram.ext.updater:Received signal 2 (SIGINT), stopping...
+INFO:apscheduler.scheduler:Scheduler has been shut down
+WARNING:telegram.ext.updater:Exiting immediately!
+21-Feb-21 22:47:53 - Бот стартовал
+21-Feb-21 22:47:53 - Scheduler started
+21-Feb-21 22:48:12 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 22:48:12 - Scheduler has been shut down
+21-Feb-21 22:57:24 - Бот стартовал
+21-Feb-21 22:57:24 - Scheduler started
+21-Feb-21 22:57:50 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\LearnPython\lesson1\bot\learn_python_alex_bot.py", line 15, in talk_to_me
+    update.message.reply.text(text)
+AttributeError: 'Message' object has no attribute 'reply'
+21-Feb-21 23:01:15 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 23:01:15 - Scheduler has been shut down
+21-Feb-21 23:01:21 - Exiting immediately!
+21-Feb-21 23:01:24 - Бот стартовал
+21-Feb-21 23:01:24 - Scheduler started
+21-Feb-21 23:06:38 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 23:06:38 - Scheduler has been shut down
+21-Feb-21 23:06:38 - Exiting immediately!
+21-Feb-21 23:06:41 - Бот стартовал
+21-Feb-21 23:06:41 - Scheduler started
+21-Feb-21 23:09:24 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 23:09:24 - Scheduler has been shut down
+21-Feb-21 23:09:24 - Exiting immediately!
+21-Feb-21 23:09:26 - Бот стартовал
+21-Feb-21 23:09:26 - Scheduler started
+21-Feb-21 23:13:29 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 23:13:29 - Scheduler has been shut down
+21-Feb-21 23:13:29 - Exiting immediately!
