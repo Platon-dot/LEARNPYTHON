@@ -53,3 +53,182 @@ AttributeError: 'Message' object has no attribute 'reply'
 21-Feb-21 23:13:29 - Received signal 2 (SIGINT), stopping...
 21-Feb-21 23:13:29 - Scheduler has been shut down
 21-Feb-21 23:13:29 - Exiting immediately!
+21-Feb-21 23:20:41 - Бот стартовал
+21-Feb-21 23:20:41 - Scheduler started
+21-Feb-21 23:21:10 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 23:21:10 - Scheduler has been shut down
+21-Feb-21 23:22:24 - Бот стартовал
+21-Feb-21 23:22:24 - Scheduler started
+21-Feb-21 23:22:51 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 23:22:51 - Scheduler has been shut down
+21-Feb-21 23:24:36 - Бот стартовал
+21-Feb-21 23:24:36 - Scheduler started
+21-Feb-21 23:43:35 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 23:43:35 - Scheduler has been shut down
+21-Feb-21 23:43:42 - Exiting immediately!
+21-Feb-21 23:43:45 - Бот стартовал
+21-Feb-21 23:43:45 - Scheduler started
+21-Feb-21 23:46:04 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 23:46:04 - Scheduler has been shut down
+21-Feb-21 23:46:04 - Exiting immediately!
+21-Feb-21 23:46:07 - Бот стартовал
+21-Feb-21 23:46:07 - Scheduler started
+21-Feb-21 23:47:36 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 23:47:36 - Scheduler has been shut down
+21-Feb-21 23:47:37 - Exiting immediately!
+21-Feb-21 23:47:40 - Бот стартовал
+21-Feb-21 23:47:40 - Scheduler started
+21-Feb-21 23:48:22 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 23:48:22 - Scheduler has been shut down
+21-Feb-21 23:48:22 - Exiting immediately!
+21-Feb-21 23:48:24 - Бот стартовал
+21-Feb-21 23:48:24 - Scheduler started
+21-Feb-21 23:50:29 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 23:50:29 - Scheduler has been shut down
+21-Feb-21 23:50:29 - Exiting immediately!
+21-Feb-21 23:50:39 - Бот стартовал
+21-Feb-21 23:50:39 - Scheduler started
+21-Feb-21 23:51:30 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\LearnPython\lesson1\bot\learn_python_alex_bot1.py", line 15, in planet_request
+    planet = ephem.user_planet()
+AttributeError: module 'ephem' has no attribute 'user_planet'
+21-Feb-21 23:55:06 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 23:55:06 - Scheduler has been shut down
+21-Feb-21 23:55:06 - Exiting immediately!
+21-Feb-21 23:55:08 - Бот стартовал
+21-Feb-21 23:55:08 - Scheduler started
+21-Feb-21 23:55:12 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\LearnPython\lesson1\bot\learn_python_alex_bot1.py", line 17, in planet_request
+    planet = ephem.user_planet()
+AttributeError: module 'ephem' has no attribute 'user_planet'
+21-Feb-21 23:55:13 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\LearnPython\lesson1\bot\learn_python_alex_bot1.py", line 17, in planet_request
+    planet = ephem.user_planet()
+AttributeError: module 'ephem' has no attribute 'user_planet'
+21-Feb-21 23:55:20 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\LearnPython\lesson1\bot\learn_python_alex_bot1.py", line 17, in planet_request
+    planet = ephem.user_planet()
+AttributeError: module 'ephem' has no attribute 'user_planet'
+21-Feb-21 23:56:24 - Received signal 2 (SIGINT), stopping...
+21-Feb-21 23:56:24 - Scheduler has been shut down
+21-Feb-21 23:56:24 - Exiting immediately!
+21-Feb-21 23:56:26 - Бот стартовал
+21-Feb-21 23:56:26 - Scheduler started
+21-Feb-21 23:56:31 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\LearnPython\lesson1\bot\learn_python_alex_bot1.py", line 17, in planet_request
+    planet = ephem.user_planet(now.strftime("%d/%m/%Y"))
+AttributeError: module 'ephem' has no attribute 'user_planet'
+21-Feb-21 23:57:22 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\LearnPython\lesson1\bot\learn_python_alex_bot1.py", line 17, in planet_request
+    planet = ephem.user_planet(now.strftime("%d/%m/%Y"))
+AttributeError: module 'ephem' has no attribute 'user_planet'
+22-Feb-21 08:29:55 - Error while getting Updates: urllib3 HTTPError ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+22-Feb-21 08:29:55 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Python39\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Python39\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Python39\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Python39\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Python39\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Python39\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Python39\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python39\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Python39\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Python39\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\telegram\bot.py", line 117, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\telegram\bot.py", line 2725, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\telegram\bot.py", line 235, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "C:\Python39\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
