@@ -1012,3 +1012,7 @@ telegram.error.Conflict: Conflict: terminated by other getUpdates request; make 
 22-Feb-21 10:48:33 - Received signal 2 (SIGINT), stopping...
 22-Feb-21 10:48:33 - Scheduler has been shut down
 22-Feb-21 10:48:34 - Exiting immediately!
+22-Feb-21 16:09:38 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+22-Feb-21 16:09:38 - Scheduler started
+22-Feb-21 16:10:49 - Received signal 2 (SIGINT), stopping...
+22-Feb-21 16:10:49 - Scheduler has been shut down
