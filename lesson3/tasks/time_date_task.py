@@ -9,9 +9,9 @@ dt_now = datetime.now()
 delta = timedelta(days=-1)
 yesterday = dt_now - delta
 toomorrow = dt_now + delta
-            print(yesterday)
+print(yesterday)
 print(dt_now)
-        print(toomorrow)
+print(toomorrow)
 
 # превращение в объект
 
