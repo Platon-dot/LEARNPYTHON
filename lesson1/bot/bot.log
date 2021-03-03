@@ -1040,3 +1040,418 @@ IndexError: list index out of range
 22-Feb-21 21:34:26 - Received signal 2 (SIGINT), stopping...
 22-Feb-21 21:34:26 - Scheduler has been shut down
 22-Feb-21 21:34:26 - Exiting immediately!
+01-Mar-21 21:30:15 - Бот стартовал
+01-Mar-21 21:30:15 - Scheduler started
+01-Mar-21 21:32:56 - Received signal 2 (SIGINT), stopping...
+01-Mar-21 21:32:56 - Scheduler has been shut down
+01-Mar-21 21:32:56 - Exiting immediately!
+01-Mar-21 21:35:18 - Бот стартовал
+01-Mar-21 21:35:18 - Scheduler started
+01-Mar-21 21:35:54 - Received signal 2 (SIGINT), stopping...
+01-Mar-21 21:35:54 - Scheduler has been shut down
+01-Mar-21 21:35:59 - Exiting immediately!
+01-Mar-21 21:50:06 - Бот стартовал
+01-Mar-21 21:50:06 - Scheduler started
+01-Mar-21 22:16:59 - Received signal 2 (SIGINT), stopping...
+01-Mar-21 22:16:59 - Scheduler has been shut down
+01-Mar-21 22:17:03 - Exiting immediately!
+01-Mar-21 22:17:06 - Бот стартовал
+01-Mar-21 22:17:06 - Scheduler started
+01-Mar-21 22:18:20 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 32, in guess_number
+    update.message.reply_text(message)
+AttributeError: 'NoneType' object has no attribute 'reply_text'
+01-Mar-21 22:33:16 - Received signal 2 (SIGINT), stopping...
+01-Mar-21 22:33:16 - Scheduler has been shut down
+01-Mar-21 22:33:16 - Exiting immediately!
+01-Mar-21 22:33:17 - Бот стартовал
+01-Mar-21 22:33:17 - Scheduler started
+01-Mar-21 22:34:16 - Received signal 2 (SIGINT), stopping...
+01-Mar-21 22:34:16 - Scheduler has been shut down
+01-Mar-21 22:34:17 - Exiting immediately!
+01-Mar-21 22:34:18 - Бот стартовал
+01-Mar-21 22:34:18 - Scheduler started
+01-Mar-21 22:37:48 - Received signal 2 (SIGINT), stopping...
+01-Mar-21 22:37:48 - Scheduler has been shut down
+01-Mar-21 22:37:48 - Exiting immediately!
+01-Mar-21 22:41:23 - Бот стартовал
+01-Mar-21 22:41:23 - Scheduler started
+01-Mar-21 23:04:01 - Received signal 2 (SIGINT), stopping...
+01-Mar-21 23:04:01 - Scheduler has been shut down
+01-Mar-21 23:04:01 - Exiting immediately!
+01-Mar-21 23:04:03 - Бот стартовал
+01-Mar-21 23:04:03 - Scheduler started
+01-Mar-21 23:35:25 - Received signal 2 (SIGINT), stopping...
+01-Mar-21 23:35:25 - Scheduler has been shut down
+01-Mar-21 23:35:25 - Exiting immediately!
+01-Mar-21 23:51:31 - Бот стартовал
+01-Mar-21 23:51:31 - Scheduler started
+02-Mar-21 11:18:07 - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000001AFBD8B1B80>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates
+02-Mar-21 11:18:07 - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000001AFBD8B1AC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates
+02-Mar-21 11:18:07 - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000001AFBD8B1790>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates
+02-Mar-21 11:18:07 - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000001AFBD8B1D00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+02-Mar-21 11:18:07 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000001AFBD8B1D00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000001AFBD8B1D00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000001AFBD8B1D00>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+02-Mar-21 11:18:08 - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000001AFBD8CA310>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates
+02-Mar-21 15:10:46 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 15:10:46 - Scheduler has been shut down
+02-Mar-21 15:10:46 - Exiting immediately!
+02-Mar-21 15:10:48 - Бот стартовал
+02-Mar-21 15:10:48 - Scheduler started
+02-Mar-21 15:15:28 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 15:15:28 - Scheduler has been shut down
+02-Mar-21 15:28:56 - Бот стартовал
+02-Mar-21 15:28:56 - Scheduler started
+02-Mar-21 15:29:44 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 15:29:44 - Scheduler has been shut down
+02-Mar-21 15:29:44 - Exiting immediately!
+02-Mar-21 15:54:09 - Бот стартовал
+02-Mar-21 15:54:09 - Scheduler started
+02-Mar-21 16:01:26 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 54, in send_emoji
+    file_filename = choice(file_list)
+NameError: name 'choice' is not defined
+02-Mar-21 16:04:54 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 16:04:54 - Scheduler has been shut down
+02-Mar-21 16:04:59 - Бот стартовал
+02-Mar-21 16:04:59 - Scheduler started
+02-Mar-21 16:05:04 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 54, in send_emoji
+    file_filename = choice(file_list)
+NameError: name 'choice' is not defined
+02-Mar-21 16:07:04 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 16:07:04 - Scheduler has been shut down
+02-Mar-21 16:23:49 - Бот стартовал
+02-Mar-21 16:23:49 - Scheduler started
+02-Mar-21 16:24:06 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 54, in send_emoji
+    rick_filename = choice(rick_list)
+NameError: name 'choice' is not defined
+02-Mar-21 16:26:30 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 16:26:30 - Scheduler has been shut down
+02-Mar-21 16:26:36 - Exiting immediately!
+02-Mar-21 16:26:39 - Бот стартовал
+02-Mar-21 16:26:39 - Scheduler started
+02-Mar-21 16:26:41 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 54, in send_emoji
+    rick_filename = choice(rick_list)
+NameError: name 'choice' is not defined
+02-Mar-21 16:26:45 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 54, in send_emoji
+    rick_filename = choice(rick_list)
+NameError: name 'choice' is not defined
+02-Mar-21 16:26:47 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 54, in send_emoji
+    rick_filename = choice(rick_list)
+NameError: name 'choice' is not defined
+02-Mar-21 16:34:27 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 16:34:27 - Scheduler has been shut down
+02-Mar-21 16:34:30 - Бот стартовал
+02-Mar-21 16:34:30 - Scheduler started
+02-Mar-21 16:34:32 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 54, in send_emoji
+    rick_filename = choice(rick_list)
+NameError: name 'choice' is not defined
+02-Mar-21 16:34:34 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 54, in send_emoji
+    rick_filename = choice(rick_list)
+NameError: name 'choice' is not defined
+02-Mar-21 16:35:30 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 16:35:30 - Scheduler has been shut down
+02-Mar-21 16:35:34 - Exiting immediately!
+02-Mar-21 16:35:37 - Бот стартовал
+02-Mar-21 16:35:37 - Scheduler started
+02-Mar-21 16:35:40 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 54, in send_emoji
+    rick_filename = choice(rick_list)
+NameError: name 'choice' is not defined
+02-Mar-21 16:37:26 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 16:37:26 - Scheduler has been shut down
+02-Mar-21 16:37:26 - Exiting immediately!
+02-Mar-21 16:37:29 - Бот стартовал
+02-Mar-21 16:37:29 - Scheduler started
+02-Mar-21 16:37:35 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 54, in send_emoji
+    rick_filename = choice(rick_list)
+NameError: name 'choice' is not defined
+02-Mar-21 16:40:34 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 16:40:34 - Scheduler has been shut down
+02-Mar-21 16:40:34 - Exiting immediately!
+02-Mar-21 16:40:36 - Бот стартовал
+02-Mar-21 16:40:36 - Scheduler started
+02-Mar-21 16:40:38 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 57, in send_emoji
+    context.bot.send_document(chat_id=chat_id, document=open(rick_filename, 'r'))
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 875, in send_document
+    'document': parse_file_input(document, Document, filename=filename),
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\helpers.py", line 143, in parse_file_input
+    return InputFile(file_input, attach=attach, filename=filename)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\files\inputfile.py", line 58, in __init__
+    self.input_file_content = obj.read()
+  File "C:\Python39\lib\encodings\cp1251.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x98 in position 516: character maps to <undefined>
+02-Mar-21 16:46:19 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 16:46:19 - Scheduler has been shut down
+02-Mar-21 16:46:24 - Бот стартовал
+02-Mar-21 16:46:24 - Scheduler started
+02-Mar-21 16:46:28 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 56, in send_emoji
+    context.bot.send_document(chat_id=chat_id, document=open(rick_filename, 'r'))
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 875, in send_document
+    'document': parse_file_input(document, Document, filename=filename),
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\helpers.py", line 143, in parse_file_input
+    return InputFile(file_input, attach=attach, filename=filename)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\files\inputfile.py", line 58, in __init__
+    self.input_file_content = obj.read()
+  File "C:\Python39\lib\encodings\cp1251.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x98 in position 450: character maps to <undefined>
+02-Mar-21 16:46:30 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 56, in send_emoji
+    context.bot.send_document(chat_id=chat_id, document=open(rick_filename, 'r'))
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 875, in send_document
+    'document': parse_file_input(document, Document, filename=filename),
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\helpers.py", line 143, in parse_file_input
+    return InputFile(file_input, attach=attach, filename=filename)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\files\inputfile.py", line 58, in __init__
+    self.input_file_content = obj.read()
+  File "C:\Python39\lib\encodings\cp1251.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x98 in position 365: character maps to <undefined>
+02-Mar-21 16:46:49 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 56, in send_emoji
+    chat_id = update.effective_chat.id # отправляем фото конкретному пользователю получая от него его текущий id
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 875, in send_document
+    'document': parse_file_input(document, Document, filename=filename),
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\helpers.py", line 143, in parse_file_input
+    return InputFile(file_input, attach=attach, filename=filename)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\files\inputfile.py", line 58, in __init__
+    self.input_file_content = obj.read()
+  File "C:\Python39\lib\encodings\cp1251.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x98 in position 699: character maps to <undefined>
+02-Mar-21 16:55:48 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\learn_python_alex_planet_bot.py", line 56, in send_emoji
+    chat_id = update.effective_chat.id # отправляем фото конкретному пользователю получая от него его текущий id
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 875, in send_document
+    'document': parse_file_input(document, Document, filename=filename),
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\helpers.py", line 143, in parse_file_input
+    return InputFile(file_input, attach=attach, filename=filename)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\files\inputfile.py", line 58, in __init__
+    self.input_file_content = obj.read()
+  File "C:\Python39\lib\encodings\cp1251.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x98 in position 787: character maps to <undefined>
+02-Mar-21 16:59:20 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 16:59:20 - Scheduler has been shut down
+02-Mar-21 16:59:20 - Exiting immediately!
+02-Mar-21 16:59:22 - Бот стартовал
+02-Mar-21 16:59:22 - Scheduler started
+02-Mar-21 17:12:49 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 17:12:49 - Scheduler has been shut down
+02-Mar-21 19:45:03 - Бот стартовал
+02-Mar-21 19:45:03 - Scheduler started
+02-Mar-21 22:02:31 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 22:02:31 - Scheduler has been shut down
+02-Mar-21 22:02:38 - Бот стартовал
+02-Mar-21 22:02:38 - Scheduler started
+02-Mar-21 22:57:48 - Received signal 2 (SIGINT), stopping...
+02-Mar-21 22:57:48 - Scheduler has been shut down
+02-Mar-21 22:57:48 - Exiting immediately!
+03-Mar-21 00:09:12 - Бот стартовал
+03-Mar-21 00:09:12 - Scheduler started
+03-Mar-21 00:13:46 - Received signal 2 (SIGINT), stopping...
+03-Mar-21 00:13:46 - Scheduler has been shut down
+03-Mar-21 00:13:52 - Бот стартовал
+03-Mar-21 00:13:52 - Scheduler started
+03-Mar-21 00:15:24 - Received signal 2 (SIGINT), stopping...
+03-Mar-21 00:15:24 - Scheduler has been shut down
+03-Mar-21 00:15:34 - Exiting immediately!
+03-Mar-21 00:15:37 - Бот стартовал
+03-Mar-21 00:15:37 - Scheduler started
+03-Mar-21 10:58:41 - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000019C835763D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates
+03-Mar-21 11:26:20 - Received signal 2 (SIGINT), stopping...
+03-Mar-21 11:26:20 - Scheduler has been shut down
+03-Mar-21 11:26:21 - Exiting immediately!
+03-Mar-21 12:53:09 - Бот стартовал
+03-Mar-21 12:53:09 - Scheduler started
+03-Mar-21 12:57:03 - Received signal 2 (SIGINT), stopping...
+03-Mar-21 12:57:03 - Scheduler has been shut down
+03-Mar-21 12:57:03 - Exiting immediately!
+03-Mar-21 12:57:04 - Бот стартовал
+03-Mar-21 12:57:04 - Scheduler started
+03-Mar-21 12:59:18 - Received signal 2 (SIGINT), stopping...
+03-Mar-21 12:59:18 - Scheduler has been shut down
+03-Mar-21 12:59:18 - Exiting immediately!
+03-Mar-21 12:59:20 - Бот стартовал
+03-Mar-21 12:59:20 - Scheduler started
+03-Mar-21 13:18:18 - Received signal 2 (SIGINT), stopping...
+03-Mar-21 13:18:18 - Scheduler has been shut down
+03-Mar-21 13:18:18 - Exiting immediately!
+03-Mar-21 13:19:00 - Бот стартовал
+03-Mar-21 13:19:00 - Scheduler started
+03-Mar-21 13:19:37 - Received signal 2 (SIGINT), stopping...
+03-Mar-21 13:19:37 - Scheduler has been shut down
+03-Mar-21 13:19:37 - Exiting immediately!
+03-Mar-21 13:19:39 - Бот стартовал
+03-Mar-21 13:19:39 - Scheduler started
+03-Mar-21 13:21:26 - Received signal 2 (SIGINT), stopping...
+03-Mar-21 13:21:26 - Scheduler has been shut down
+03-Mar-21 13:21:27 - Exiting immediately!
