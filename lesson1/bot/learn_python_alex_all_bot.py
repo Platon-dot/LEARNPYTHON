@@ -5,13 +5,19 @@ import ephem, datetime
 from random import randint, choice
 from glob import glob
 from emoji import emojize
+from telegram import ReplyKeyboardMarkup # Клавиатура
 
 logging.basicConfig(filename='bot.log', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO) # Теперь, настроим логирование. Будем записывать все сообщения уровня INFO
 
 def greet_user(update, context):
     print('Вызван /start')
     context.user_data['emoji'] = get_smile(context.user_data)# говорим что нужно преобразовать иконку смайлика и передать ее в коде
-    update.message.reply_text(f"Привет Бро! {context.user_data['emoji']}")
+    my_keyboard = ReplyKeyboardMarkup([[' Сгонять за Риком ']], resize_keyboard=True) # заводим клавиатуру 
+    update.message.reply_text(
+        f"Привет Бро! {context.user_data['emoji']}", 
+        reply_markup=my_keyboard
+        )
+    
     # print(update)
 
 
@@ -80,8 +86,8 @@ def main():
     dp.add_handler(CommandHandler('planet', user_planet))
     dp.add_handler(CommandHandler('guess', guess_number)) # кнопрки для бота 
     dp.add_handler(CommandHandler('rick', send_emoji))
+    dp.add_handler(MessageHandler(Filters.regex('^(Сгонять за Риком)$'), send_emoji)) # реакция на текст в чате
     dp.add_handler(MessageHandler(Filters.text, talk_to_me)) # эхо сообщения для пользователя
-    
     
     logging.info('Бот стартовал')
     mybot.start_polling()  # команда боту начать ходить в telegram за сообщениями
