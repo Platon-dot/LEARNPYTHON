@@ -20263,3 +20263,5 @@
 /Final-project/
 /lesson4/DB/settings.py
 /lesson1/bot/bot.log
+/lesson1/bot/__pycache__/hendlers.cpython-39.pyc
+/lesson1/bot/__pycache__/utils.cpython-39.pyc
