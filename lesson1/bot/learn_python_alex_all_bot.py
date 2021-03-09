@@ -45,18 +45,7 @@ def play_random_nambers(user_number):
         message = f'Твое число {user_number}, моё {bot_number}, ты проиграл'
     return message
 
-def guess_number(update, context): # игра с пользователем 
-    print(context.args)
-    
-    if context.args:
-        try:
-            user_number = int(context.args[0])
-            message = play_random_nambers(user_number)
-        except (TypeError, ValueError):
-            message = 'Введи целое число'
-    else:
-        message = 'Введи число'
-    update.message.reply_text(message)
+
 
 def send_emoji(update, context):
     rick_list = glob('images\\file*.tgs')
