@@ -1,8 +1,8 @@
+import os
+import ephem, datetime
 from glob import glob
 from random import randint, choice
-import ephem, datetime
 from telegram import ReplyKeyboardMarkup, KeyboardButton # Клавиатура 
-
 from utils import get_smile, play_random_nambers, main_keyboard
 
 def greet_user(update, context):
@@ -66,3 +66,11 @@ def user_planet(update, context):
     update.message.reply_text(const)
 # planet_now = user_planet("Venus")
 # print(planet_now)
+
+def check_user_photo(update, context):
+    update.message.reply_text("Идет обработка фото")
+    os.makedirs("downloads", exist_ok=True) # создаем папку Download. Если ее нет, то создаем
+    user_photo = context.bot.getFile(update.message.photo[-1].file_id)   # положим в переменную файл полученного изображения
+    file_name = os.path.join("downloads", f"{user_photo.file_id}.jpg") # в зисимости от операционной системы , прописывается правильный путь к папке с таким \ или таким / слешем
+    user_photo.download(file_name)
+    update.message.reply_text("Фото сохранено на диск")

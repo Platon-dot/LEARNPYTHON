@@ -10,7 +10,7 @@ LearnBot - это бот для Telegram, созданный с целью об�
 
 1. Конфигурируй репозиторий с github
 2. Создай виртуальное окружение
-3. Установи зависимости 'pip install -r requirements.txt'
+3. Установи зависимости "pip install -r requirements.txt"
 4. Создай файл settings.py
 5. Впиши в settings.py переменные: 
 '''
@@ -19,4 +19,4 @@ USER_EMOJI = [':cat2:', ':dragon:',':turtle:', ':panda_face:',':racehorse:', ':e
     ':bug:', ':ant:', ':snail:',':whale:', ':dolphin:',':crocodile:'] 
        #https://www.webfx.com/toolsemoji-cheat-sheet/
 '''
-6. Запиши бота командой 'python learn_bot.py'
+6. Запиши бота командой "python learn_bot.py"
