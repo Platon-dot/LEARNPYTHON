@@ -1906,3 +1906,376 @@ Traceback (most recent call last):
   File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
     raise NetworkError(f'urllib3 HTTPError {error}') from error
 telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+11-Mar-21 12:38:01 - Бот стартовал
+11-Mar-21 12:38:01 - Scheduler started
+11-Mar-21 12:39:00 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 12:39:00 - Scheduler has been shut down
+11-Mar-21 12:39:00 - Exiting immediately!
+11-Mar-21 12:39:02 - Бот стартовал
+11-Mar-21 12:39:02 - Scheduler started
+11-Mar-21 12:50:14 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 12:50:14 - Scheduler has been shut down
+11-Mar-21 12:50:14 - Exiting immediately!
+11-Mar-21 12:56:27 - Бот стартовал
+11-Mar-21 12:56:27 - Scheduler started
+11-Mar-21 12:59:33 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 12:59:33 - Scheduler has been shut down
+11-Mar-21 12:59:38 - Exiting immediately!
+11-Mar-21 12:59:42 - Бот стартовал
+11-Mar-21 12:59:42 - Scheduler started
+11-Mar-21 13:02:36 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 13:02:36 - Scheduler has been shut down
+11-Mar-21 13:02:44 - Exiting immediately!
+11-Mar-21 13:02:46 - Бот стартовал
+11-Mar-21 13:02:46 - Scheduler started
+11-Mar-21 13:02:54 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\learnpython\lesson1\bot\hendlers.py", line 71, in check_user_photo
+    for photo in update.message.photo[-1]: # возвращение последнего размера отправленной в telegram фотографии
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\base.py", line 45, in __getitem__
+    return self.__dict__[item]
+KeyError: 0
+11-Mar-21 13:03:29 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\learnpython\lesson1\bot\hendlers.py", line 71, in check_user_photo
+    for photo in update.message.photo[-1]: # возвращение последнего размера отправленной в telegram фотографии
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\base.py", line 45, in __getitem__
+    return self.__dict__[item]
+KeyError: 0
+11-Mar-21 13:04:18 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 13:04:18 - Scheduler has been shut down
+11-Mar-21 13:04:26 - Бот стартовал
+11-Mar-21 13:04:26 - Scheduler started
+11-Mar-21 13:04:52 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 13:04:52 - Scheduler has been shut down
+11-Mar-21 13:04:56 - Exiting immediately!
+11-Mar-21 13:04:58 - Бот стартовал
+11-Mar-21 13:04:58 - Scheduler started
+11-Mar-21 13:05:09 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\learnpython\lesson1\bot\hendlers.py", line 71, in check_user_photo
+    for photo in update.message.photo[-1]: # возвращение последнего размера отправленной в telegram фотографии
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\base.py", line 45, in __getitem__
+    return self.__dict__[item]
+KeyError: 0
+11-Mar-21 13:08:22 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 13:08:22 - Scheduler has been shut down
+11-Mar-21 13:08:22 - Exiting immediately!
+11-Mar-21 13:08:24 - Бот стартовал
+11-Mar-21 13:08:24 - Scheduler started
+11-Mar-21 13:11:34 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 13:11:34 - Scheduler has been shut down
+11-Mar-21 13:11:34 - Exiting immediately!
+11-Mar-21 13:11:36 - Бот стартовал
+11-Mar-21 13:11:36 - Scheduler started
+11-Mar-21 13:28:00 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 13:28:00 - Scheduler has been shut down
+11-Mar-21 13:28:06 - Бот стартовал
+11-Mar-21 13:28:06 - Scheduler started
+11-Mar-21 13:40:52 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 13:40:52 - Scheduler has been shut down
+11-Mar-21 13:40:57 - Exiting immediately!
+11-Mar-21 13:58:50 - Бот стартовал
+11-Mar-21 13:58:50 - Scheduler started
+11-Mar-21 14:02:07 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 14:02:07 - Scheduler has been shut down
+11-Mar-21 14:02:14 - Бот стартовал
+11-Mar-21 14:02:14 - Scheduler started
+11-Mar-21 14:03:21 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 14:03:21 - Scheduler has been shut down
+11-Mar-21 14:03:21 - Exiting immediately!
+11-Mar-21 14:03:22 - Бот стартовал
+11-Mar-21 14:03:22 - Scheduler started
+11-Mar-21 14:20:43 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 14:20:43 - Scheduler has been shut down
+11-Mar-21 14:20:43 - Exiting immediately!
+11-Mar-21 14:20:45 - Бот стартовал
+11-Mar-21 14:20:45 - Scheduler started
+11-Mar-21 14:24:20 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 14:24:20 - Scheduler has been shut down
+11-Mar-21 14:24:20 - Exiting immediately!
+11-Mar-21 14:24:22 - Бот стартовал
+11-Mar-21 14:24:22 - Scheduler started
+11-Mar-21 19:16:50 - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000163C3FB6700>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates
+11-Mar-21 19:16:50 - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000163C3FB67F0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates
+11-Mar-21 19:16:50 - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000163C3FB69D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates
+11-Mar-21 19:16:50 - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000163C3FB6B20>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+11-Mar-21 19:16:50 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000163C3FB6B20>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000163C3FB6B20>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000163C3FB6B20>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+11-Mar-21 19:16:51 - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x00000163C400F220>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates
+11-Mar-21 21:27:31 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 21:27:31 - Scheduler has been shut down
+11-Mar-21 21:27:31 - Exiting immediately!
+11-Mar-21 21:27:34 - Бот стартовал
+11-Mar-21 21:27:34 - Scheduler started
+11-Mar-21 21:42:51 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 21:42:51 - Scheduler has been shut down
+11-Mar-21 21:43:01 - Бот стартовал
+11-Mar-21 21:43:01 - Scheduler started
+11-Mar-21 21:48:58 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 21:48:58 - Scheduler has been shut down
+11-Mar-21 21:48:58 - Exiting immediately!
+11-Mar-21 21:49:00 - Бот стартовал
+11-Mar-21 21:49:00 - Scheduler started
+11-Mar-21 21:50:25 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 21:50:25 - Scheduler has been shut down
+11-Mar-21 21:50:25 - Exiting immediately!
+11-Mar-21 21:50:27 - Бот стартовал
+11-Mar-21 21:50:27 - Scheduler started
+11-Mar-21 21:51:12 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 21:51:12 - Scheduler has been shut down
+11-Mar-21 21:51:12 - Exiting immediately!
+11-Mar-21 21:51:14 - Бот стартовал
+11-Mar-21 21:51:14 - Scheduler started
+11-Mar-21 21:52:09 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 21:52:09 - Scheduler has been shut down
+11-Mar-21 21:52:09 - Exiting immediately!
+11-Mar-21 21:53:05 - Бот стартовал
+11-Mar-21 21:53:05 - Scheduler started
+11-Mar-21 21:53:10 - Received signal 2 (SIGINT), stopping...
+11-Mar-21 21:53:10 - Scheduler has been shut down
+11-Mar-21 21:53:15 - Exiting immediately!
+13-Mar-21 10:08:57 - Бот стартовал
+13-Mar-21 10:08:57 - Scheduler started
+13-Mar-21 10:09:38 - Received signal 2 (SIGINT), stopping...
+13-Mar-21 10:09:38 - Scheduler has been shut down
+13-Mar-21 10:09:38 - Exiting immediately!
+13-Mar-21 10:09:40 - Бот стартовал
+13-Mar-21 10:09:40 - Scheduler started
+13-Mar-21 10:21:42 - Received signal 2 (SIGINT), stopping...
+13-Mar-21 10:21:42 - Scheduler has been shut down
+13-Mar-21 10:21:43 - Exiting immediately!
+13-Mar-21 10:21:45 - Бот стартовал
+13-Mar-21 10:21:45 - Scheduler started
+13-Mar-21 10:22:35 - Error while getting Updates: Unauthorized
+13-Mar-21 10:22:35 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 270, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Unauthorized
+13-Mar-21 10:22:36 - Error while getting Updates: Unauthorized
+13-Mar-21 10:22:36 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 270, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Unauthorized
+13-Mar-21 10:22:37 - Error while getting Updates: Unauthorized
+13-Mar-21 10:22:37 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 270, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Unauthorized
+13-Mar-21 10:22:40 - Error while getting Updates: Unauthorized
+13-Mar-21 10:22:40 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 270, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Unauthorized
+13-Mar-21 10:22:43 - Error while getting Updates: Unauthorized
+13-Mar-21 10:22:43 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 270, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Unauthorized
+13-Mar-21 10:22:48 - Error while getting Updates: Unauthorized
+13-Mar-21 10:22:48 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 270, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Unauthorized
+13-Mar-21 10:22:56 - Error while getting Updates: Unauthorized
+13-Mar-21 10:22:56 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 270, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Unauthorized
+13-Mar-21 10:23:01 - Received signal 2 (SIGINT), stopping...
+13-Mar-21 10:23:01 - Scheduler has been shut down
+13-Mar-21 10:23:01 - Exiting immediately!
+13-Mar-21 10:23:03 - Бот стартовал
+13-Mar-21 10:23:03 - Scheduler started
+13-Mar-21 10:26:10 - Received signal 2 (SIGINT), stopping...
+13-Mar-21 10:26:10 - Scheduler has been shut down
+13-Mar-21 10:26:11 - Exiting immediately!
+13-Mar-21 10:32:55 - Бот стартовал
+13-Mar-21 10:32:55 - Scheduler started
+13-Mar-21 10:36:03 - Received signal 2 (SIGINT), stopping...
+13-Mar-21 10:36:03 - Scheduler has been shut down
+13-Mar-21 10:36:03 - Exiting immediately!
+13-Mar-21 10:36:06 - Бот стартовал
+13-Mar-21 10:36:06 - Scheduler started
+13-Mar-21 10:37:27 - Received signal 2 (SIGINT), stopping...
+13-Mar-21 10:37:27 - Scheduler has been shut down
+13-Mar-21 10:37:28 - Exiting immediately!
+13-Mar-21 10:37:29 - Бот стартовал
+13-Mar-21 10:37:29 - Scheduler started
+13-Mar-21 10:37:38 - Received signal 2 (SIGINT), stopping...
+13-Mar-21 10:37:38 - Scheduler has been shut down
+13-Mar-21 10:37:38 - Exiting immediately!
+13-Mar-21 10:37:45 - Бот стартовал
+13-Mar-21 10:37:45 - Scheduler started
+13-Mar-21 10:37:58 - Received signal 2 (SIGINT), stopping...
+13-Mar-21 10:37:58 - Scheduler has been shut down
+13-Mar-21 10:37:59 - Exiting immediately!
