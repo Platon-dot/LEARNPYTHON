@@ -2515,3 +2515,21 @@ telegram.error.Unauthorized: Unauthorized
 13-Mar-21 10:37:58 - Scheduler has been shut down
 13-Mar-21 10:37:59 - Exiting immediately!
 >>>>>>> origin/bot
+17-Mar-21 00:05:21 - Бот стартовал
+17-Mar-21 00:05:21 - Scheduler started
+17-Mar-21 00:07:18 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\LearnPython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\LearnPython\lesson1\bot\hendlers.py", line 49, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+17-Mar-21 00:10:41 - Received signal 2 (SIGINT), stopping...
+17-Mar-21 00:10:41 - Scheduler has been shut down
+17-Mar-21 00:10:41 - Exiting immediately!
+17-Mar-21 00:10:44 - Бот стартовал
+17-Mar-21 00:10:44 - Scheduler started

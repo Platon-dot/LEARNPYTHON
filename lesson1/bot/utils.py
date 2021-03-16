@@ -33,26 +33,12 @@ def main_keyboard():
     
 
 def is_human(file_name):
-<<<<<<< HEAD
-    app = ClarifaiApp(api_key=settings.CLARIFAI_API_KEY)
-    model = app.public_models.general_model
-    responce = model.predict_by_filename(file_name, max_concepts=5)
-    if responce['status']['code'] == 10000:
-        for concept in responce['outputs'][0]['data']['concepts']:
-            if concept['name'] == 'woman':
-                return True
-    return False
-
-if __name__ == "__main__":
-    print(is_human("images/human1.jpg"))
-    print(is_human("images/human2.jpg"))
-=======
     app = ClarifaiApp(api_key=settings.CLARIFAI_API_KEY) #создали app
     model = app.public_models.general_model # говорим с помощью какой модели машинного обучения мы хотим обрабатывать фото
     responce = model.predict_by_filename(file_name, max_concepts=5) # укладываем ответ от clarifai max_concepts - количество объектов котрое мы хоим распознавать на фото
     if responce['status']['code'] == 10000: 
         for concept in responce['outputs'][0]['data']['concepts']:
-            if concept['name'] == 'man':
+            if concept['name'] == 'woman':
                 return True
     return False
     
@@ -64,5 +50,3 @@ if __name__ == "__main__":
     print(is_human("images\human3.jpg"))
     print(is_human("images\human4.jpg"))
     print(is_human("images\human5.jpg"))
-    print(is_human("images\human6.jpg"))
->>>>>>> origin/bot
