@@ -1,7 +1,7 @@
 import settings
 from clarifai.rest import ClarifaiApp
 from emoji import emojize
-from pprint import PrettyPrinter
+#from pprint import PrettyPrinter
 from random import randint, choice
 from telegram import ReplyKeyboardMarkup, KeyboardButton # Клавиатура 
 
@@ -28,14 +28,20 @@ def play_random_nambers(user_number):
 
 
 def main_keyboard():
-    return ReplyKeyboardMarkup([['Сгонять за Риком', KeyboardButton('Мои координаты', request_location=True)]], resize_keyboard=True)
+    return ReplyKeyboardMarkup([['Сгонять за Риком','Сгонять за девченками'], 
+                                [KeyboardButton('Мои координаты', request_location=True)]], resize_keyboard=True)
+    
 
 def is_human(file_name):
-    app = ClarifaiApp(api_key=settings.CLARIFAI_API_KEY) #создали app
-    model = app.public_models.general_model # говорим с помощью какой модели машинного обучения мы хотим обрабатывать фото
-    response = model.predict_by_filename(file_name, max_concepts=5) # укладываем ответ от clarifai max_concepts - количество объектов котрое мы хоим распознавать на фото
-    return response
-    
+    app = ClarifaiApp(api_key=settings.CLARIFAI_API_KEY)
+    model = app.public_models.general_model
+    responce = model.predict_by_filename(file_name, max_concepts=5)
+    if responce['status']['code'] == 10000:
+        for concept in responce['outputs'][0]['data']['concepts']:
+            if concept['name'] == 'woman':
+                return True
+    return False
+
 if __name__ == "__main__":
-    pp = PrettyPrinter(indent=2)  # создали переменную с отступом 2 пробела
-    print.pprint(is_human("images/human1.jpg"))
+    print(is_human("images/human1.jpg"))
+    print(is_human("images/human2.jpg"))

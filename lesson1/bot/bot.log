@@ -1906,3 +1906,236 @@ Traceback (most recent call last):
   File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
     raise NetworkError(f'urllib3 HTTPError {error}') from error
 telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+14-Mar-21 14:39:42 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 14:39:42 - Scheduler started
+14-Mar-21 14:39:57 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 14:39:57 - Scheduler has been shut down
+14-Mar-21 14:39:57 - Exiting immediately!
+14-Mar-21 15:54:50 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 15:54:50 - Scheduler started
+14-Mar-21 16:06:57 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:06:57 - Scheduler has been shut down
+14-Mar-21 16:07:05 - Exiting immediately!
+14-Mar-21 16:07:09 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:07:09 - Scheduler started
+14-Mar-21 16:11:41 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:11:41 - Scheduler has been shut down
+14-Mar-21 16:11:41 - Exiting immediately!
+14-Mar-21 16:11:44 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:11:44 - Scheduler started
+14-Mar-21 16:32:05 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:32:05 - Scheduler has been shut down
+14-Mar-21 16:32:05 - Exiting immediately!
+14-Mar-21 16:43:55 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:43:55 - Scheduler started
+14-Mar-21 16:45:15 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:45:15 - Scheduler has been shut down
+14-Mar-21 16:45:15 - Exiting immediately!
+14-Mar-21 16:45:17 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:45:17 - Scheduler started
+14-Mar-21 16:45:33 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:45:33 - Scheduler has been shut down
+14-Mar-21 16:45:33 - Exiting immediately!
+14-Mar-21 16:45:35 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:45:35 - Scheduler started
+14-Mar-21 16:48:54 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:48:54 - Scheduler has been shut down
+14-Mar-21 16:48:54 - Exiting immediately!
+14-Mar-21 16:48:56 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:48:56 - Scheduler started
+14-Mar-21 16:51:28 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:51:28 - Scheduler has been shut down
+14-Mar-21 16:51:28 - Exiting immediately!
+14-Mar-21 16:51:31 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:51:31 - Scheduler started
+14-Mar-21 16:54:41 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:54:41 - Scheduler has been shut down
+14-Mar-21 16:54:41 - Exiting immediately!
+14-Mar-21 16:54:43 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:54:43 - Scheduler started
+14-Mar-21 16:56:12 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 50, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:04:55 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:04:55 - Scheduler has been shut down
+14-Mar-21 17:04:55 - Exiting immediately!
+14-Mar-21 17:04:56 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:04:56 - Scheduler started
+14-Mar-21 17:05:06 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 15, in greet_user
+    reply_markup=my_keyboard()
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+14-Mar-21 17:05:28 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:05:28 - Scheduler has been shut down
+14-Mar-21 17:05:34 - Exiting immediately!
+14-Mar-21 17:05:36 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:05:36 - Scheduler started
+14-Mar-21 17:05:40 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 15, in greet_user
+    reply_markup=my_keyboard()
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+14-Mar-21 17:08:14 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:08:14 - Scheduler has been shut down
+14-Mar-21 17:08:14 - Exiting immediately!
+14-Mar-21 17:08:17 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:08:17 - Scheduler started
+14-Mar-21 17:08:23 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 15, in greet_user
+    reply_markup=main_keyboard()
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+14-Mar-21 17:08:26 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 15, in greet_user
+    reply_markup=main_keyboard()
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+14-Mar-21 17:10:55 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:10:55 - Scheduler has been shut down
+14-Mar-21 17:10:56 - Exiting immediately!
+14-Mar-21 17:10:57 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:10:57 - Scheduler started
+14-Mar-21 17:11:05 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 50, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:11:44 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:11:44 - Scheduler has been shut down
+14-Mar-21 17:11:45 - Exiting immediately!
+14-Mar-21 17:11:46 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:11:46 - Scheduler started
+14-Mar-21 17:11:55 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 50, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:12:23 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:12:23 - Scheduler has been shut down
+14-Mar-21 17:12:23 - Exiting immediately!
+14-Mar-21 17:12:25 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:12:25 - Scheduler started
+14-Mar-21 17:13:40 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 50, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:14:50 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:14:50 - Scheduler has been shut down
+14-Mar-21 17:14:50 - Exiting immediately!
+14-Mar-21 17:14:52 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:14:52 - Scheduler started
+14-Mar-21 17:14:54 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 15, in greet_user
+    reply_markup=my_keyboard()
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+14-Mar-21 17:15:36 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:15:36 - Scheduler has been shut down
+14-Mar-21 17:15:37 - Exiting immediately!
+14-Mar-21 17:15:38 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:15:38 - Scheduler started
+14-Mar-21 17:15:39 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 15, in greet_user
+    reply_markup=main_keyboard()
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+14-Mar-21 17:15:47 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 50, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:16:02 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 50, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:23:55 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:23:55 - Scheduler has been shut down
+14-Mar-21 17:23:55 - Exiting immediately!
+14-Mar-21 17:23:58 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:23:58 - Scheduler started
+14-Mar-21 17:24:18 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 49, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:25:02 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:25:02 - Scheduler has been shut down
+14-Mar-21 17:25:03 - Exiting immediately!
+14-Mar-21 17:25:05 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:25:05 - Scheduler started
+14-Mar-21 17:30:09 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:30:09 - Scheduler has been shut down
+14-Mar-21 17:30:12 - Exiting immediately!
+14-Mar-21 17:30:13 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:30:13 - Scheduler started
