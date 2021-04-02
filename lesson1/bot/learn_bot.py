@@ -12,11 +12,11 @@ def main():
     mybot = Updater(settings.API_KEY, use_context=True)
     
     dp = mybot.dispatcher
-    
+    # вход в анкету
     anketa=ConversationHandler(
         entry_points=[
             MessageHandler(Filters.regex('^(Заполнить анкету)$'), anketa_start)
-        ], # вход в анкету
+        ], 
         states={
             "name":[MessageHandler(Filters.text, anketa_name)],
             "raiting": [
@@ -30,22 +30,28 @@ def main():
         fallbacks=[]
     )
     dp.add_handler(anketa)    
-    dp.add_handler(CommandHandler('start', greet_user)) # даем команду на котрую будет реагировать бот
+    # даем команду на котрую будет реагировать бот
+    dp.add_handler(CommandHandler('start', greet_user)) 
     dp.add_handler(CommandHandler('planet', user_planet))
-    dp.add_handler(CommandHandler('guess', guess_number)) # кнопрки для бота 
+    # кнопки для бота 
+    dp.add_handler(CommandHandler('guess', guess_number)) 
     dp.add_handler(CommandHandler('rick', send_emoji))
     dp.add_handler(CommandHandler('woman', send_woman))
     dp.add_handler(MessageHandler(Filters.photo, check_user_photo))
-    dp.add_handler(MessageHandler(Filters.regex('^(Сгонять за Риком)$'), send_emoji)) # реакция на текст в чате
+    # реакция на текст в чате
+    dp.add_handler(MessageHandler(Filters.regex('^(Сгонять за Риком)$'), send_emoji)) 
     dp.add_handler(MessageHandler(Filters.regex('^(Сгонять за девченками)$'), send_woman))
     dp.add_handler(MessageHandler(Filters.location, user_coordinate))
-    dp.add_handler(MessageHandler(Filters.text, talk_to_me)) # эхо сообщения для пользователя
+    # эхо сообщения для пользователя
+    dp.add_handler(MessageHandler(Filters.text, talk_to_me)) 
     
     
     
     logging.info('Бот стартовал')
-    mybot.start_polling()  # команда боту начать ходить в telegram за сообщениями
-    mybot.idle() # запуск бота, пока его не остановим принудительно
+    # команда боту начать ходить в telegram за сообщениями
+    mybot.start_polling() 
+    # запуск бота, пока его не остановим принудительно
+    mybot.idle() 
 
 if __name__ == "__main__":
     main()
