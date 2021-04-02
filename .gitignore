@@ -1,3 +1,9 @@
+lesson1/bot/env/
+flask_server/env/
+*.pdf
+*.pyc
+.bot.log
+*.jpg
 *.log
 /lesson1/pip
 /lesson2/test.py
