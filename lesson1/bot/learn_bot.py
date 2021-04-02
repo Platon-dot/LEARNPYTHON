@@ -11,9 +11,11 @@ def main():
     mybot = Updater(settings.API_KEY, use_context=True)
     
     dp = mybot.dispatcher
-    dp.add_handler(CommandHandler('start', greet_user)) # даем команду на котрую будет реагировать бот
+    # даем команду на котрую будет реагировать бот
+    dp.add_handler(CommandHandler('start', greet_user)) 
     dp.add_handler(CommandHandler('planet', user_planet))
-    dp.add_handler(CommandHandler('guess', guess_number)) # кнопрки для бота 
+    # кнопки для бота
+    dp.add_handler(CommandHandler('guess', guess_number))  
     dp.add_handler(CommandHandler('rick', send_emoji))
     dp.add_handler(CommandHandler('woman', send_woman))
     dp.add_handler(MessageHandler(Filters.photo, check_user_photo))
