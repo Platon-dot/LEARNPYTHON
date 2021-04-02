@@ -1557,3 +1557,585 @@ TypeError: reply_text() got an unexpected keyword argument 'reply_markup1'
 08-Mar-21 23:30:39 - Exiting immediately!
 08-Mar-21 23:30:41 - Бот стартовал
 08-Mar-21 23:30:41 - Scheduler started
+09-Mar-21 12:25:31 - Error while getting Updates: urllib3 HTTPError ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+09-Mar-21 12:25:31 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+09-Mar-21 18:27:31 - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002AA2A0AA1F0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates
+09-Mar-21 18:27:31 - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002AA2A0AA4C0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates
+09-Mar-21 18:27:31 - Retrying (Retry(total=0, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002AA2A0AA610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates
+09-Mar-21 18:27:31 - Error while getting Updates: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002AA2A0AA760>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+09-Mar-21 18:27:31 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 140, in _new_conn
+    conn = connection.create_connection(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 149, in _new_conn
+    raise NewConnectionError(
+telegram.vendor.ptb_urllib3.urllib3.exceptions.NewConnectionError: <telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002AA2A0AA760>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 691, in urlopen
+    return self.urlopen(method, url, body, headers, retries,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 376, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+telegram.vendor.ptb_urllib3.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002AA2A0AA760>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot1531933362:AAGxfPKu2iUbHLxHk_hrNRFo5hy8gyLjZBU/getUpdates (Caused by NewConnectionError('<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x000002AA2A0AA760>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+09-Mar-21 21:00:21 - Error while getting Updates: urllib3 HTTPError EOF occurred in violation of protocol (_ssl.c:1123)
+09-Mar-21 21:00:21 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 319, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\ssl_.py", line 324, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Python39\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Python39\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Python39\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1123)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 647, in urlopen
+    raise SSLError(e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.SSLError: EOF occurred in violation of protocol (_ssl.c:1123)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError EOF occurred in violation of protocol (_ssl.c:1123)
+09-Mar-21 21:00:25 - Error while getting Updates: urllib3 HTTPError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1123)
+09-Mar-21 21:00:38 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 360, in _make_request
+    self._validate_conn(conn)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 857, in _validate_conn
+    super(HTTPSConnectionPool, self)._validate_conn(conn)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 289, in _validate_conn
+    conn.connect()
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connection.py", line 319, in connect
+    self.sock = ssl_wrap_socket(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\ssl_.py", line 324, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Python39\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Python39\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Python39\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1123)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 647, in urlopen
+    raise SSLError(e)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1123)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1123)
+09-Mar-21 23:20:57 - Received signal 2 (SIGINT), stopping...
+09-Mar-21 23:20:57 - Scheduler has been shut down
+09-Mar-21 23:20:59 - Exiting immediately!
+09-Mar-21 23:25:31 - Бот стартовал
+09-Mar-21 23:25:31 - Scheduler started
+10-Mar-21 12:18:40 - Error while getting Updates: urllib3 HTTPError ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+10-Mar-21 12:18:41 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 465, in _network_loop_retry
+    if not action_cb():
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\updater.py", line 416, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 126, in decorator
+    result = func(*args, **kwargs)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 2748, in get_updates
+    result = self._post(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\bot.py", line 258, in _post
+    return self.request.post(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+14-Mar-21 14:39:42 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 14:39:42 - Scheduler started
+14-Mar-21 14:39:57 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 14:39:57 - Scheduler has been shut down
+14-Mar-21 14:39:57 - Exiting immediately!
+14-Mar-21 15:54:50 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 15:54:50 - Scheduler started
+14-Mar-21 16:06:57 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:06:57 - Scheduler has been shut down
+14-Mar-21 16:07:05 - Exiting immediately!
+14-Mar-21 16:07:09 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:07:09 - Scheduler started
+14-Mar-21 16:11:41 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:11:41 - Scheduler has been shut down
+14-Mar-21 16:11:41 - Exiting immediately!
+14-Mar-21 16:11:44 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:11:44 - Scheduler started
+14-Mar-21 16:32:05 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:32:05 - Scheduler has been shut down
+14-Mar-21 16:32:05 - Exiting immediately!
+14-Mar-21 16:43:55 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:43:55 - Scheduler started
+14-Mar-21 16:45:15 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:45:15 - Scheduler has been shut down
+14-Mar-21 16:45:15 - Exiting immediately!
+14-Mar-21 16:45:17 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:45:17 - Scheduler started
+14-Mar-21 16:45:33 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:45:33 - Scheduler has been shut down
+14-Mar-21 16:45:33 - Exiting immediately!
+14-Mar-21 16:45:35 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:45:35 - Scheduler started
+14-Mar-21 16:48:54 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:48:54 - Scheduler has been shut down
+14-Mar-21 16:48:54 - Exiting immediately!
+14-Mar-21 16:48:56 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:48:56 - Scheduler started
+14-Mar-21 16:51:28 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:51:28 - Scheduler has been shut down
+14-Mar-21 16:51:28 - Exiting immediately!
+14-Mar-21 16:51:31 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:51:31 - Scheduler started
+14-Mar-21 16:54:41 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 16:54:41 - Scheduler has been shut down
+14-Mar-21 16:54:41 - Exiting immediately!
+14-Mar-21 16:54:43 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 16:54:43 - Scheduler started
+14-Mar-21 16:56:12 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 50, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:04:55 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:04:55 - Scheduler has been shut down
+14-Mar-21 17:04:55 - Exiting immediately!
+14-Mar-21 17:04:56 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:04:56 - Scheduler started
+14-Mar-21 17:05:06 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 15, in greet_user
+    reply_markup=my_keyboard()
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+14-Mar-21 17:05:28 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:05:28 - Scheduler has been shut down
+14-Mar-21 17:05:34 - Exiting immediately!
+14-Mar-21 17:05:36 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:05:36 - Scheduler started
+14-Mar-21 17:05:40 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 15, in greet_user
+    reply_markup=my_keyboard()
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+14-Mar-21 17:08:14 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:08:14 - Scheduler has been shut down
+14-Mar-21 17:08:14 - Exiting immediately!
+14-Mar-21 17:08:17 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:08:17 - Scheduler started
+14-Mar-21 17:08:23 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 15, in greet_user
+    reply_markup=main_keyboard()
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+14-Mar-21 17:08:26 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 15, in greet_user
+    reply_markup=main_keyboard()
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+14-Mar-21 17:10:55 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:10:55 - Scheduler has been shut down
+14-Mar-21 17:10:56 - Exiting immediately!
+14-Mar-21 17:10:57 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:10:57 - Scheduler started
+14-Mar-21 17:11:05 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 50, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:11:44 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:11:44 - Scheduler has been shut down
+14-Mar-21 17:11:45 - Exiting immediately!
+14-Mar-21 17:11:46 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:11:46 - Scheduler started
+14-Mar-21 17:11:55 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 50, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:12:23 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:12:23 - Scheduler has been shut down
+14-Mar-21 17:12:23 - Exiting immediately!
+14-Mar-21 17:12:25 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:12:25 - Scheduler started
+14-Mar-21 17:13:40 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 50, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:14:50 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:14:50 - Scheduler has been shut down
+14-Mar-21 17:14:50 - Exiting immediately!
+14-Mar-21 17:14:52 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:14:52 - Scheduler started
+14-Mar-21 17:14:54 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 15, in greet_user
+    reply_markup=my_keyboard()
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+14-Mar-21 17:15:36 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:15:36 - Scheduler has been shut down
+14-Mar-21 17:15:37 - Exiting immediately!
+14-Mar-21 17:15:38 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:15:38 - Scheduler started
+14-Mar-21 17:15:39 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 15, in greet_user
+    reply_markup=main_keyboard()
+TypeError: 'ReplyKeyboardMarkup' object is not callable
+14-Mar-21 17:15:47 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 50, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:16:02 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 50, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:23:55 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:23:55 - Scheduler has been shut down
+14-Mar-21 17:23:55 - Exiting immediately!
+14-Mar-21 17:23:58 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:23:58 - Scheduler started
+14-Mar-21 17:24:18 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "c:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\learnpython\lesson1\bot\hendlers.py", line 49, in send_woman
+    woman_filename = choice(woman_list)
+  File "C:\Python39\lib\random.py", line 346, in choice
+    return seq[self._randbelow(len(seq))]
+IndexError: list index out of range
+14-Mar-21 17:25:02 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:25:02 - Scheduler has been shut down
+14-Mar-21 17:25:03 - Exiting immediately!
+14-Mar-21 17:25:05 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:25:05 - Scheduler started
+14-Mar-21 17:30:09 - Received signal 2 (SIGINT), stopping...
+14-Mar-21 17:30:09 - Scheduler has been shut down
+14-Mar-21 17:30:12 - Exiting immediately!
+14-Mar-21 17:30:13 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
+14-Mar-21 17:30:13 - Scheduler started
