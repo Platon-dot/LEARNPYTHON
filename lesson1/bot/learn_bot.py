@@ -1,5 +1,6 @@
 import logging # импортируем log файл
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters # импорт обработчика команд
+from anketa import anketa_start, anketa_name, anketa_raiting, anketa_skip, anketa_comment
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler # импорт обработчика команд
 import settings
 
 from hendlers import (greet_user, talk_to_me, guess_number,
@@ -11,6 +12,24 @@ def main():
     mybot = Updater(settings.API_KEY, use_context=True)
     
     dp = mybot.dispatcher
+    
+    anketa=ConversationHandler(
+        entry_points=[
+            MessageHandler(Filters.regex('^(Заполнить анкету)$'), anketa_start)
+        ], # вход в анкету
+        states={
+            "name":[MessageHandler(Filters.text, anketa_name)],
+            "raiting": [
+                MessageHandler(Filters.regex('^(1|2|3|4|5)$'), anketa_raiting)],
+            "comment": [
+                CommandHandler('slip', anketa_skip),
+                MessageHandler(Filters.text, anketa_comment)
+            ]
+            
+        },
+        fallbacks=[]
+    )
+    dp.add_handler(anketa)    
     dp.add_handler(CommandHandler('start', greet_user)) # даем команду на котрую будет реагировать бот
     dp.add_handler(CommandHandler('planet', user_planet))
     dp.add_handler(CommandHandler('guess', guess_number)) # кнопрки для бота 

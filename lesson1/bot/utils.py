@@ -27,9 +27,9 @@ def play_random_nambers(user_number):
     return message
 
 
-def main_keyboard():
+def main_keyboard(): # список всех копок
     return ReplyKeyboardMarkup([['Сгонять за Риком','Сгонять за девченками'], 
-                                [KeyboardButton('Мои координаты', request_location=True)]], resize_keyboard=True)
+                                [KeyboardButton('Мои координаты', request_location=True), 'Заполнить анкету']], resize_keyboard=True)
     
 
 def is_human(file_name):
