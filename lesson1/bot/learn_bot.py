@@ -22,7 +22,8 @@ def main():
     dp.add_handler(MessageHandler(Filters.regex('^(Сгонять за Риком)$'), send_emoji)) # реакция на текст в чате
     dp.add_handler(MessageHandler(Filters.regex('^(Сгонять за девченками)$'), send_woman))
     dp.add_handler(MessageHandler(Filters.location, user_coordinate))
-    dp.add_handler(MessageHandler(Filters.text, talk_to_me)) # эхо сообщения для пользователя
+    # эхо сообщения для пользователя
+    dp.add_handler(MessageHandler(Filters.text, talk_to_me)) 
     
     
     
