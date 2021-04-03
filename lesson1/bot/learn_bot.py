@@ -1,5 +1,6 @@
 import logging # импортируем log файл
-from anketa import anketa_start, anketa_name, anketa_raiting, anketa_skip, anketa_comment
+from anketa import (anketa_start, anketa_name, anketa_raiting, anketa_skip, anketa_comment, 
+                    anketa_dontknow)
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler # импорт обработчика команд
 import settings
 
@@ -27,7 +28,10 @@ def main():
             ]
             
         },
-        fallbacks=[]
+        fallbacks=[
+            MessageHandler(Filters.text | Filters.photo | Filters.video | Filters.document | Filters.location,
+            anketa_dontknow)
+        ]
     )
     dp.add_handler(anketa)    
     # даем команду на котрую будет реагировать бот

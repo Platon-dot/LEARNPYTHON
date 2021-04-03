@@ -48,5 +48,8 @@ def format_anketa(anketa):
 <b>Оценка</b>: {anketa['raiting']}
 '''
     if 'comment' in anketa:
-        user_text += f"\n<b>Комментарий</b>: {anketa['comment']}"
+        user_text += f"<b>Комментарий</b>: {anketa['comment']}"
     return user_text
+
+def anketa_dontknow(update, context):
+    update.message.reply_text("Введи только цифры от 1 до 5")
