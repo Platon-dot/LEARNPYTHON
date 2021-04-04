@@ -132,6 +132,8 @@ dmypy.json
 *.pyc
 *.pdf
 *.jpg
+lesson4/DB/__pycache__/db.cpython-39.pyc
+lesson4/DB/__pycache__/models.cpython-39.pyc
 /lesson1/pip
 /lesson2/test.py
 /lesson2/test_lines_and_for.py
@@ -33927,3 +33929,5 @@ dmypy.json
 /lesson4/date_analyse/env/share/jupyter/nbextensions/jupyter-js-widgets/extension.js
 /lesson4/date_analyse/env/share/jupyter/nbextensions/jupyter-js-widgets/extension.js.map
 /lesson4/date_analyse/env/share/man/man1/ipython.1.gz
+/lesson4/DB/__pycache__/db.cpython-39.pyc
+/lesson4/DB/__pycache__/models.cpython-39.pyc
