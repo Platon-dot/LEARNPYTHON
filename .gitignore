@@ -1,7 +1,7 @@
 # Files
 *.csv
 *.ipynb
-
+*cpython-39.pyc
 # Byte-compiled / optimized / DLL files
 /__pycache__/
 __pycache__/
@@ -135,6 +135,7 @@ dmypy.json
 lesson4/DB/__pycache__/models.cpython-39.pyc
 lesson4/DB/__pycache__/db.cpython-39.pyc
 *.pyc
+.pyc
 *.pdf
 *.jpg
 lesson1/bot/settings.py
