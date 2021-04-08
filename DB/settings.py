@@ -1,0 +1,1 @@
+DB_LINK = 'postgres://bhzqldql:ilkNeRXrUCQGbvUl_LHN_ZhcXfEDlu4Y@hattie.db.elephantsql.com:5432/bhzqldql'
