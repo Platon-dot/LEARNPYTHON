@@ -27,16 +27,47 @@ def save_companies(all_data):
     db_session.commit()
     return companies_unique
 
-def save_employees(data, companies):
+def get_company_id(company_name, companies_unique):
+    for row in companies_unique:
+        if row['name'] == company_name:
+            return row['id']
+    return None
+
+
+def save_employees(all_data, companies):
     processed = []
-    unique_employees = []
-    for row in data:
+    employees_unique = []
+    for row in all_data:
         if row['phone_person'] not in processed:
-            employee = {'name': row['name'], 'job': row['job'], 'phone': row['phone_person'], 
-                    'email': row['email'], 'date_of_birth': row['date_of_birth']}
-            
+            employee = {'name': row['name'], 'job': row['job'], 'email': row['email'],
+            'phone': row['phone_person'], 'date_of_birth': row['date_of_birth']
+            }
+            employee['company_id'] = get_company_id(row['company'], companies)
+            employees_unique.append(employee)
+            processed.append(row['phone_person'])
+    db_session.bulk_insert_mappings(Employee, employees_unique, return_defaults=True)
+    db_session.commit()
+    return employees_unique
+
+def get_employee_id(phone, employees_unique):
+    for row in employees_unique:
+        if row['phone'] == phone:
+            return row['id']
+    return None
+
+def save_payments(all_data, employees):
+    payments = []
+    for row in all_data:
+        payment = {'payment_date': row['payment_date'], 'ammount': row['ammount'],
+                    'employee_id': get_employee_id(row['phone_person'], employees)
+        }
+        payments.append(payment)
+    db_session.bulk_insert_mappings(Payment, payments)
+    db_session.commit()
 
 
 if __name__ == '__main__':
     all_data = read_csv('salary.csv')
     companies = save_companies(all_data)
+    employees = save_employees(all_data, companies)
+    save_payments(all_data, employees)
