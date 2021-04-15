@@ -1,7 +1,8 @@
 from pymongo import MongoClient
+import settings
 
 client = MongoClient(
-    "mongodb+srv://UncleStifler:HvaiLlnet29jIt5E@cluster0.o5qvo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    settings.API_MONGO
 )
 
 db = client.testdb
