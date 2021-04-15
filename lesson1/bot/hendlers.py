@@ -4,9 +4,13 @@ from glob import glob
 from random import randint, choice
 from telegram import ReplyKeyboardMarkup, KeyboardButton # Клавиатура 
 from utils import get_smile, play_random_nambers, main_keyboard, is_human
+from db import db, get_or_create_user
 
 def greet_user(update, context):
     print('Вызван /start')
+    # вызов базы даннх из db
+    user = get_or_create_user(db, update.effective_user,
+    update.message.chat.id)
     context.user_data['emoji'] = get_smile(context.user_data)# говорим что нужно преобразовать иконку смайлика и передать ее в коде 
     update.message.reply_text(
         f"Привет Бро! {context.user_data['emoji']}", 
@@ -16,6 +20,8 @@ def greet_user(update, context):
     # print(update)
     
 def talk_to_me(update, context):
+    user = get_or_create_user(db, update.effective_user,
+    update.message.chat.id)
     context.user_data['emoji'] = get_smile(context.user_data)
     user_text = update.message.text
     print(user_text)
@@ -23,8 +29,8 @@ def talk_to_me(update, context):
                         reply_markup=main_keyboard())
 
 def guess_number(update, context): # игра с пользователем 
-    print(context.args)
-    
+    user = get_or_create_user(db, update.effective_user,
+    update.message.chat.id)    
     if context.args:
         try:
             user_number = int(context.args[0])
@@ -75,6 +81,8 @@ def user_planet(update, context):
 # print(planet_now)
 
 def check_user_photo(update, context):
+    user = get_or_create_user(db, update.effective_user,
+    update.message.chat.id)
     update.message.reply_text("Идет обработка фото")
     os.makedirs("downloads", exist_ok=True) # создаем папку Download. Если ее нет, то создаем
     user_photo = context.bot.getFile(update.message.photo[-1].file_id)   # положим в переменную файл полученного изображения

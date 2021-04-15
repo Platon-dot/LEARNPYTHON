@@ -2139,3 +2139,56 @@ IndexError: list index out of range
 14-Mar-21 17:30:12 - Exiting immediately!
 14-Mar-21 17:30:13 - \u0411\u043e\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b
 14-Mar-21 17:30:13 - Scheduler started
+15-Apr-21 23:33:56 - Бот стартовал
+15-Apr-21 23:33:56 - Scheduler started
+15-Apr-21 23:34:18 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\learnpython\lesson1\bot\hendlers.py", line 11, in greet_user
+    user = get_or_create_user(db, update.effective_user,
+  File "C:\learnpython\lesson1\bot\db.py", line 18, in get_or_create_user
+    "chat_id": effective_user.chat_id,
+AttributeError: 'User' object has no attribute 'chat_id'
+15-Apr-21 23:35:51 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\learnpython\lesson1\bot\hendlers.py", line 11, in greet_user
+    user = get_or_create_user(db, update.effective_user,
+  File "C:\learnpython\lesson1\bot\db.py", line 18, in get_or_create_user
+    "chat_id": effective_user.chat_id,
+AttributeError: 'User' object has no attribute 'chat_id'
+15-Apr-21 23:36:08 - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\learnpython\lesson1\bot\env\lib\site-packages\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "C:\learnpython\lesson1\bot\hendlers.py", line 11, in greet_user
+    user = get_or_create_user(db, update.effective_user,
+  File "C:\learnpython\lesson1\bot\db.py", line 18, in get_or_create_user
+    "chat_id": effective_user.chat_id,
+AttributeError: 'User' object has no attribute 'chat_id'
+15-Apr-21 23:39:23 - Received signal 2 (SIGINT), stopping...
+15-Apr-21 23:39:23 - Scheduler has been shut down
+15-Apr-21 23:39:28 - Exiting immediately!
+15-Apr-21 23:39:31 - Бот стартовал
+15-Apr-21 23:39:31 - Scheduler started
+15-Apr-21 23:40:38 - Received signal 2 (SIGINT), stopping...
+15-Apr-21 23:40:38 - Scheduler has been shut down
+15-Apr-21 23:40:38 - Exiting immediately!
+15-Apr-21 23:40:40 - Бот стартовал
+15-Apr-21 23:40:40 - Scheduler started
+15-Apr-21 23:43:44 - Received signal 2 (SIGINT), stopping...
+15-Apr-21 23:43:44 - Scheduler has been shut down
+15-Apr-21 23:43:44 - Exiting immediately!
+15-Apr-21 23:43:46 - Бот стартовал
+15-Apr-21 23:43:46 - Scheduler started
+15-Apr-21 23:51:06 - Received signal 2 (SIGINT), stopping...
+15-Apr-21 23:51:06 - Scheduler has been shut down
+15-Apr-21 23:51:06 - Exiting immediately!
